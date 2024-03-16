@@ -1,0 +1,39 @@
+.settings__excluded-ingredients {
+  width: 90%;
+}
+
+.excluded-ingredients__buttons {
+  float: right;
+}
+
+.excluded-ingredients__button:hover {
+  font-size: 26px;
+}
+
+.excluded-ingredients__button-delete {
+  color:rgb(196, 0, 0);
+}
+
+.settings__excluded-ingredients__table-name {
+  width: 15%;
+}
+
+.settings__exlcuded-ingredients__table-ingredients-list {
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-flex;
+}
+
+.excluded-ingredient-option {
+  background-color: var(--accent-3);
+  color: black;
+  line-height: normal;
+  height: min-content;
+}
+
+.selected_item .excluded-ingredient-option {
+  background-color: var(--accent-1);
+  border: 1px solid var(--accent-2);
+  box-sizing: border-box;
+}

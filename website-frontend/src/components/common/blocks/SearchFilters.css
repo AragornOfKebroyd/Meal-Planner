@@ -1,0 +1,211 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+/* 
+.selected-filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
+  width: 35%;
+  height: 100%;
+  column-gap: 1rem;
+} */
+
+.filter-display {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  height: 100%;
+  align-self: center;
+  justify-items: center;
+}
+
+.filter-display__option {
+  background-color: var(--accent-3);
+  color: black;
+}
+
+.selected_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid var(--dark-main-3); */
+  border-radius: 12px;
+  padding: 1px;
+}
+
+.selected_item .filter-display__option {
+  background-color: var(--accent-1);
+}
+
+.selected_item-include .filter-display__option {
+  border: 1px solid var(--green-success);
+}
+
+.selected_item-exclude .filter-display__option{
+  border: 1px solid var(--error-red);
+}
+
+.selected_item {
+  display: flex;
+  align-items: centers;
+}
+
+.filters__section-title {
+  margin-top: 4rem;
+}
+
+/* Stat Row */
+.stats__row {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 10px;
+  background-color: var(--accent-3);
+  border-radius: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  align-content: center;
+  font-weight: 500;
+  width: 90%;
+}
+
+.equalitycheck {
+  background-color: var(--accent-1);
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  font-family: var(--smaller-text-font-family);
+  font-size: var(--smaller-text-font-size);
+  font-style: var(--smaller-text-font-style);
+  font-weight: var(--smaller-text-font-weight);
+  padding: 0 0.5rem;
+}
+
+.equalitycheck:focus-visible {
+  border-radius: 15px 15px 0 0;
+}
+
+.stats__row__number {
+  background-color: var(--accent-1);
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  font-family: var(--smaller-text-font-family);
+  font-size: var(--smaller-text-font-size);
+  font-style: var(--smaller-text-font-style);
+  font-weight: var(--smaller-text-font-weight);
+  appearance: none;
+  -moz-appearance: textfield; /* This removes the arrows on the input field */
+}
+
+.stats__row__range {
+  color: var(--accent-1);
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+/* Random stuff to make work on all browsers */
+
+.stats__row__range::-moz-range-track, .stats__row__range::-webkit-slider-runnable-track {
+  height: 0.5rem;
+  background-color: var(--accent-1);
+  border: 1px solid var(--accent-2);
+  border-radius: 0.25rem;
+}
+
+.stats__row__range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -12px; /* Centers thumb on the track */
+  border: 2px solid var(--dark-main-3);
+  background-color: var(--dark-main-2);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box; 
+}
+
+.stats__row__range::-moz-range-thumb {
+  border: 2px solid var(--dark-main-3);
+  background-color: var(--dark-main-2);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.stats__row__range:focus {
+  outline: none;
+}
+
+.stats__row__range:focus::-moz-range-thumb, .stats__row__range:focus::-webkit-slider-thumb {
+  border: 1px solid var(--accent-2);
+  outline: 3px solid var(--accent-2);
+  outline-offset: 0.125rem;     
+}
+
+
+
+
+/* Enable Disable Switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 0.5rem;
+  width: 0.5rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.slider {
+  background-color: var(--error-red);
+}
+
+.slider-backgroud:disabled:hover + .slider {
+  filter: grayscale(1);
+  cursor:unset;
+}
+
+.slider-backgroud:checked + .slider {
+  background-color: var(--green-success);
+}
+
+.slider-backgroud:checked + .slider:before {
+  transform: translateX(200%);
+}

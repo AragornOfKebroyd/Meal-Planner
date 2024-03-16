@@ -1,0 +1,5 @@
+.settings__nutrition-checkboxes {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 50%;
+}

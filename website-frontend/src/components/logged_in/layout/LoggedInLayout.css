@@ -1,0 +1,121 @@
+/* Header */
+
+.logged-in-header {
+  background-color: var(--dark-main-3);
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  z-index: 99; /* To make sure nothing goes over the header */
+}
+
+.logged-in-header__wrapper {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logged-in-header__right {
+  margin-right: 1.5rem;
+}
+
+.logged-in-header__right__button {
+  padding: 12px 0px;
+  margin-left: 1.5rem;
+}
+
+.logged-in-header__icon {
+  height: 80px;
+  margin-left: 1rem;
+}
+
+.logged-in-header__icon-small {
+  height: 40px;
+  margin-left: 1rem;
+}
+
+.logged-in-header__back-button {
+  fill:none;
+}
+
+/* Footer */
+
+.logged-in-footer {
+  background-color: var(--dark-main-3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: var(--footer-height); 
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  z-index: 99; /* To make sure nothing goes over the footer */
+}
+
+.logged-in-footer__username {
+  color: var(--light-text);
+  font-family: var(--header-2-font-family);
+  font-size: var(--header-2-font-size);
+  font-style: var(--header-2-font-style);
+  font-weight: var(--header-2-font-weight);
+  margin-left: 1rem;
+}
+
+/* Nav */
+
+.nav-and-content {
+  display: flex;
+  margin-top: var(--header-height);
+  margin-bottom: var(--footer-height);
+}
+
+.nav-and-content__main {
+  margin-left: var(--nav-width);
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-and-content__nav {
+  position: fixed;
+  height: calc(100vh - var(--footer-height) - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: var(--nav-width);
+  background-color: var(--accent-1);
+  z-index: 99;
+}
+
+.nav-item {
+  width:100%;
+  background-color: var(--main-1);
+  margin: 2px 0;
+  transition-duration: 0.4s;
+  line-height: 0px;
+  color: var(--dark-text);
+  font-family: inherit;
+  height: 3.5rem;
+  border-radius: 0 10px 10px 0;
+  font-family: var(--menu-text-font-family);
+  font-size: var(--menu-text-font-size);
+  font-style: var(--menu-text-font-style);
+  font-weight: var(--menu-text-font-weight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+} 
+
+.nav-item:hover {
+  background-color:white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: black;
+}
+
+.nav-item__settings {
+  margin: auto 0 0 0;
+}

@@ -1,0 +1,30 @@
+.shopping-list__table {
+  width: 90%;
+  margin: 30px 0;
+}
+
+.shopping-list-dividers {
+  font-weight: 600;
+  border-top: 1px solid black;
+}
+
+.shopping-list__table-have {
+  width: 10%;
+}
+.shopping-list__table-ingredient {
+  width: 80%
+}
+.shopping-list__table-count {
+  width: 10%
+}
+
+.no-meal-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stikethrough {
+  text-decoration: line-through;
+}

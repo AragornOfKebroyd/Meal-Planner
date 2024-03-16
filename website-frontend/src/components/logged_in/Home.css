@@ -1,0 +1,41 @@
+.meal-plan-table {
+  width: 100%;
+  border-spacing: 0px;
+}
+
+.meal-plan-table__item {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+th.meal-plan-table__item {
+  border-bottom: 1px solid black;
+}
+
+.meal-plan-table__item__box {
+  margin: 0 auto;
+}
+
+.home-page__meal-plan-buttons {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.home-page__meal-plan-add-if-none {
+  background-color:limegreen;
+}
+
+.home-page__meal-plan-add-if-none__text-top, .home-page__meal-plan-add-if-none__text-bottom {
+  font-family: var(--small-text-font-family);
+  font-size: var(--small-text-font-size);
+  font-style: var(--small-text-font-style);
+  font-weight: 400;
+}
+
+.home-page__suggested-recipes{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2rem;
+  margin: 1rem 0;
+}

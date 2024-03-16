@@ -1,0 +1,16 @@
+.view_recipe_day {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.view_recipe_day_compartment {
+    background-color: var(--accent-3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+    padding: 1rem 0;
+}

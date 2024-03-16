@@ -1,0 +1,417 @@
+.recipe-icon, .blank-icon {
+  --size: 130px;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--accent-1);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  position: relative;
+}
+
+.user-recipe-icon {
+  background-color: var(--important-button-blue);
+}
+
+.recipe-icon:hover {
+  z-index: 2;
+}
+
+.blank-icon__minus-icon {
+  width: 80px;
+}
+
+.recipe-icon__top {
+  width: 100%;
+  border-radius: 26px 26px 0 0;
+  background-color: black;
+  overflow: hidden;
+  flex-basis: 70%;
+  display: flex;
+}
+
+.recipe-icon__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: 30%;
+  width: 100%;
+  flex-grow: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.recipe-icon__image {
+  width: 100%;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+/* Large Icon */
+
+.recipe-icon-large {
+  width: 95%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.recipe-icon-large-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 4fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container-large {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.info-sidebar {
+  border-left: 3px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-sidebar-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.iconlarge {
+  height: 50px;
+}
+
+.large-icon-bottom {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-column: span 2;
+  border-top: 3px solid;
+}
+
+.large-icon-rating {
+  grid-row: span 2;
+}
+
+.user-rating-large-icon {
+  font-family: var(--smaller-text-font-family);
+  font-size: var(--smaller-text-font-size);
+  font-style: var(--smaller-text-font-style);
+  font-weight: var(--smaller-text-font-weight);
+}
+
+.info-large__title {
+  white-space: nowrap;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--smaller-text-font-family);
+  font-size: var(--smaller-text-font-size);
+  font-style: var(--smaller-text-font-style);
+  font-weight: var(--smaller-text-font-weight);
+  max-width: 90%;
+}
+
+.info-large__text {
+  white-space: nowrap;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--smaller-text-font-family);
+  font-size: var(--smaller-text-font-size);
+  font-style: var(--smaller-text-font-style);
+  font-weight: 500;
+}
+
+.info-link-text {
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+  white-space: normal;
+}
+
+/* Info */
+.recipe-icon__info__container {
+  align-self: flex-start;
+  position: absolute;
+  transform: translate(105px, 10px);
+  background-color: white;
+  border-radius: 15px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.recipe-icon__info {
+  color: blue;
+  font-size: 20px;
+  position: relative;
+}
+
+.recipe-icon__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--tiny-text-font-family);
+  font-size: var(--tiny-text-font-size);
+  font-style: var(--tiny-text-font-style);
+  font-weight: var(--tiny-text-font-weight);
+  max-width: 90%;
+}
+
+/* https://www.geeksforgeeks.org/how-to-apply-an-ellipsis-to-multiline-text-in-css/ */
+.recipe-icon__title-two { 
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.reicpe-icon__star-row {
+  display: flex;
+}
+
+.reicpe-icon__star {
+  font-size: 20px;
+}
+
+.reicpe-icon__star-filled {
+  color: gold;
+}
+
+.reicpe-icon__star-empty {
+  color: var(--dark-main-2);
+}
+
+.star_row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 135px;
+}
+
+.reicpe-icon__row {
+  display: flex;
+  gap:12px
+}
+
+.bookmarkicon {
+  size: 10px;
+  cursor: pointer;
+}
+
+.addicon {
+  cursor: pointer;
+  color: black;
+}
+
+/* Hoverable box */
+
+.info-box {
+  position: absolute;
+  visibility: hidden;
+  transform: translateX(22px);
+  transition-duration: 0.2s;
+  opacity: 0;
+  
+  border: 2px solid var(--dark-main-3);
+  border-radius: 10px;
+  background-color: var(--dark-main-2);
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;  
+}
+
+.info-box__title {
+  font-family: var(--tiny-text-font-family);
+  font-size: var(--tiny-text-font-size);
+  font-style: var(--tiny-text-font-style);
+  font-weight: var(--tiny-text-font-weight);
+  color: var(--dark-text);
+}
+
+.info-box__text {
+  font-family: var(--tiny-text-font-family);
+  font-size: var(--tiny-text-font-size);
+  font-style: var(--tiny-text-font-style);
+  font-weight: 500;
+}
+
+.hoverable:hover .info-box {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+.modal-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-2);
+  border-radius: 2rem;
+  padding: 20px;
+  width: 80%;
+  min-height: 200px;
+}
+
+.modal__close {
+  color: var(--dark-main-3);
+  position: fixed;
+  font-size: 28px;
+  align-self: flex-end;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Meal Plan Icon */
+
+.meal-plan-icon__wrapper {
+  display: flex;
+  height: min-content;
+  width: min-content;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.meal-plan-icon__button {
+  width: 250px;
+  height: 50px;
+  transform: skew(-20deg);
+  border-radius: 30px;
+  background-color: var(--accent-1);
+  transition: box-shadow 0.4s;
+}
+
+.meal-plan-icon__wrapper:hover > .meal-plan-icon__button {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.meal-plan-icon__button.meal-plan-icon__selected {
+  border: 2px solid black;
+}
+
+.meal-plan-icon__green-top-bar {
+  width: 250px;
+  height: 50px;
+  transform: skew(-20deg);
+  border-radius: 30px;
+  background-color: var(--green-success);
+  position: absolute;
+  clip-path: inset(0 0 42px 0);
+}
+
+.meal-plan-icon__greyed-out{
+  width: 250px;
+  height: 50px;
+  transform: skew(-20deg);
+  border-radius: 30px;
+  background: radial-gradient(
+  50% 50% at 50% 50%,
+  rgba(98.81, 98.81, 98.81, 0.45) 0%,
+  rgba(80.75, 80.75, 80.75, 0.8) 100%
+  );
+  position: absolute;
+  filter: grayscale(100%);
+}
+
+.meal-plan-icon__green-top-bar.meal-plan-icon__selected {
+  border: 2px solid black;
+}
+
+.meal-plan-icon__radio {
+  display: none;
+}
+
+.meal-plan-icon__name {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.meal-plan-icon__name__text {
+  margin-left: 1rem;
+  font-family: var(--small-text-font-family);
+  font-size: var(--small-text-font-size);
+  font-style: var(--small-text-font-style);
+  font-weight: var(--small-text-font-weight);
+}
+
+.meal-icon {
+  height: 45px;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+/* Select Icons */
+
+.recipe-select-icon {
+  cursor: pointer;
+}
+
+.recipe-select-icon:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.recipe-icon-greyed-out {
+  background: radial-gradient(
+  50% 50% at 50% 50%,
+  rgba(98.81, 98.81, 98.81, 0.35) 0%,
+  rgba(80.75, 80.75, 80.75, 0.8) 100%
+  );
+  position: absolute;
+  width: 134px;
+  height: 134px;
+  border-radius: 30px;
+}
+
+/* Modals */
+
+.modal_padding {
+  margin-bottom: 2rem
+}

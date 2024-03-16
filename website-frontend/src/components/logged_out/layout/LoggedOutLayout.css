@@ -1,0 +1,52 @@
+/* Header */
+
+.logged-out-header {
+  background-color: var(--dark-main-3);
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  z-index: 99; /* To make sure nothing goes over the header */
+}
+
+.logged-out-header__wrapper {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logged-out-header__right {
+  margin-right: 1.5rem;
+}
+
+.logged-out-header__right__button {
+  padding: 12px 0px;
+  margin-left: 1.5rem;
+  background-color: var(--accent-2);
+}
+
+.logged-out-header__icon {
+  height: 80px;
+  fill: white;
+  margin-left: 1rem;
+}
+
+/* Footer */
+
+.logged-out-footer {
+  background-color: var(--dark-main-3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: var(--footer-height); 
+  z-index: 99; /* To make sure nothing goes over the footer */
+}
+
+.spacing {
+  margin-top: var(--header-height);
+  margin-bottom: var(--footer-height);
+}

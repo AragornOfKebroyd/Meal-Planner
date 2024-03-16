@@ -1,0 +1,60 @@
+.login-page__form, .register-page__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  margin: 1rem; 
+}
+
+.login-page__input, .register-page__input {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.login-page__register-text, .register-page__register-text {
+  text-decoration: underline;
+  color: var(--dark-text);
+  font-size: var(--smaller-text-font-size);
+  font-weight: 700;
+}
+
+.register-page__button-submit, .login-page__button-submit {
+  background-color: var(--accent-2);
+}
+
+.login-page__field-container, .register-page__field-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px
+}
+
+.register-page__instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+}
+
+.small-text {
+  font-family: var(--tiny-text-font-family);
+  font-size: var(--tiny-text-font-size);
+  font-style: var(--tiny-text-font-style);
+  font-weight: var(--tiny-text-font-weight);
+  align-self: flex-start;
+}
+
+.valid-input {
+  border-color: green;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.invalid-input {
+  border-color: red;
+  border-width: 3px;
+  border-style: solid;
+}

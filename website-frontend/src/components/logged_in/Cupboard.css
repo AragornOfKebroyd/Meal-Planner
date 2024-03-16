@@ -1,0 +1,65 @@
+.cupboard__table {
+  width: 80%;
+  margin: 2rem 0;
+}
+
+.cupboard__table-name {
+  width: 15%;
+}
+
+.cupboard__table-use {
+  width: 10%;
+}
+
+.cupboard-result-ingredient-names {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 130px;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: var(--accent-1);
+  font-family: var(--tiny-text-font-family);
+  font-size: var(--tiny-text-font-size);
+  font-style: var(--tiny-text-font-style);
+  font-weight: var(--tiny-text-font-weight);
+  margin-top: 5px;
+}
+
+.cupboard-result-ingredient-names-large {
+  width: 95%;
+}
+
+.recipe-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scroll bar */
+
+/* width */
+.cupboard-result-ingredient-names::-webkit-scrollbar {
+  height: 10px;
+  border-radius: 5px;
+}
+
+/* Track */
+.cupboard-result-ingredient-names::-webkit-scrollbar-track {
+  background: var(--dark-main-2);
+  border-radius: 5px;
+}
+
+/* Handle */
+.cupboard-result-ingredient-names::-webkit-scrollbar-thumb {
+  background: var(--accent-2);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.cupboard-result-ingredient-names::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-main-3);
+}

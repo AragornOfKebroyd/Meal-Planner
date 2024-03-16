@@ -1,0 +1,32 @@
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.page-not-found__404 {
+  font-size: 200px;
+}
+
+.fish-404 {
+  width: 150px;
+  transition: all 1s;
+}
+
+.fish-404:hover {
+  rotate: 360deg;
+}
+
+.page-not-found__text, .page-not-found__back{
+  color: var(--light-text);
+  text-decoration: none;
+}
+
+.page-not-found__back {
+  margin: 10px;
+  text-decoration: underline;
+}
