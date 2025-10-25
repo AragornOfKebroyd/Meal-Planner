@@ -1,0 +1,6 @@
+website-frontend/node_modules/
+website backend/database/recipes.db
+website backend/database/recipes.db-shm
+website backend/database/recipes.db-wal
+website backend/node_modules/
+website backend/package-lock.json
